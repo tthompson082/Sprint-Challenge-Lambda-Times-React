@@ -16,16 +16,26 @@ export default class Carousel extends Component {
   }
 
   leftClick = () => {
+    if(this.state.selected === 0) {
+      this.setState({
+        selected: this.state.carousel.length - 1
+      })
+    } else {
     this.setState(prevState => ({
       selected: prevState.selected - 1
-    }))
+    }))}
 
   }
 
   rightClick = () => {
+    if(this.state.selected === this.state.carousel.length - 1) {
+      this.setState({
+        selected: 0
+      })
+    } else {
     this.setState(prevState => ({
       selected: prevState.selected + 1
-    }))
+    }))}
 
   }
 
