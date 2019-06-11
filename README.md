@@ -29,9 +29,20 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 ## Self-Study/Essay Questions
 
 - [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+PropTypes are used to check what exactly is being passed as a prop. It is important for a couple of reasons. Firstly, it helps you to track how you are passing information between components and to make sure that the correct information is being passed where it needs to go. Another important reason to use PropTypes is to help other developers understand what is going on in your code. It makes it easier for someone to pick up and understand your code more quickly.
+
 - [ ] Describe a life-cycle event in React?
+
+A life-cycle event is one of a number of phases that a component goes through as it is being mounted, updated, and eventually unmonunted from a page. It starts with the mounting phase in which a render method is called and the component is being built. Then it moves to the updating phase where setState can be used to update the data and force a re-render. Finally there is unmounting when the component is removed from the screen.
+
 - [ ] Explain the details of a Higher Order Component?
+
+Higher Order Components are functions that can receive a component as an argument, allowing for code to follow DRY principles. They allow for a component to be passed in, add some extra functionality to that component, and then return it. They can also be used to conditionally render data to the screen, such as showing a login page rather than the actual content of the page.
+
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+
+Three different ways to style in React are Sass, Reactstrap, and Styled Components. Sass is built into CRA and allows for styling the app just like you would normally with CSS/Pre-processors. It requires the least setup of the three as you only need to import the CSS files into the corressponding JS files. Reactstrap uses Bootstrap components in React. It is good for setting up an app quickly, but it is an opinionated library that makes it more difficult to fully customize. It's main benefit comes in being able to quickly have a styled app. Styled Components remove the need for a CSS file altogether and allow for all styling to be done directly in JS. This can be good for elements that you want to change depending on some condition, such as a button changing color once a form receives all of its required inputs.
 
 ## Project Setup
 

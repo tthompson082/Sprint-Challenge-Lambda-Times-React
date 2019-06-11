@@ -1,4 +1,4 @@
-/* Do not change anything in this file until you are completed with the assignment 
+ /* Do not change anything in this file until you are completed with the assignment 
    and have moved onto the stretch goals. */
 
 export const tabData = ['all', 'javascript', 'technology', 'node', 'React.js', 'bootstrap'];
@@ -100,5 +100,8 @@ export const carouselData = [
   "./assets/carousel/mountains.jpeg",
   "./assets/carousel/computer.jpeg",
   "./assets/carousel/trees.jpeg",
-  "./assets/carousel/turntable.jpeg"
+  "./assets/carousel/turntable.jpeg",
+  "./assets/carousel/trees.jpeg",
+  "./assets/carousel/computer.jpeg",
+  "./assets/carousel/trees.jpeg",
 ]
